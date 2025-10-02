@@ -31,6 +31,14 @@ public class SecurityConfig {
         http.csrf().disable()  // form CSRF koruması kapalı
             .authorizeHttpRequests()
             .requestMatchers("/auth/**").permitAll()  // login/register açık
+            .requestMatchers(
+                    "/auth/**",
+                    "/swagger-ui.html",
+                    "/swagger-ui/**",
+                    "/v3/api-docs/**",
+                    "/swagger-resources/**",
+                    "/webjars/**"
+                ).permitAll()
             .requestMatchers("/accounts/**").permitAll()
             .requestMatchers("/admin/**").hasRole("ADMIN")	
             .anyRequest().authenticated()
