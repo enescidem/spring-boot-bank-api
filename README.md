@@ -1,5 +1,11 @@
 # Spring Boot Bank API
 
+![Proje Doc Picture](media/picture.png)
+
+
+https://github.com/user-attachments/assets/62601d1b-80a7-430b-896d-aca30b106274
+
+
 ## Description
 A Spring Boot REST API for bank account management with JWT authentication.  
 The API supports account creation, deposit, withdraw, and transfer operations, along with centralized exception handling.
